@@ -1,7 +1,7 @@
 @import './src/index.scss';
 .main {
   width: 1020px;
-  //height: 93vh;
+
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -26,4 +26,9 @@
       width: 100%;
     }
   }
+}
+
+.main__center{
+  @extend .main;
+  height: 93vh;
 }

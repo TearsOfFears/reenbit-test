@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './MainLayout.module.scss';
 function MainLayout(props) {
-  return <div className={styles.main}>{props.children}</div>;
+  const { center } = props;
+  return <div className={center ? styles.main__center : styles.main}>{props.children}</div>;
 }
 
 export default MainLayout;
