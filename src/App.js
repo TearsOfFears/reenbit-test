@@ -22,6 +22,10 @@ function App() {
 		{
 			path: "/login",
 			element:  <Login />
+		},
+		{
+			path: "*",
+			element:  <h1>Not found</h1>
 		}
 	]);
 	return (

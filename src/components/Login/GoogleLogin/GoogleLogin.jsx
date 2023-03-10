@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { GoogleLogin as Login } from "react-google-login";
+import { GoogleLogin as Login } from "@leecheuk/react-google-login";
 import { gapi } from "gapi-script";
 import { useNavigate } from "react-router-dom";
 function GoogleLogin() {
