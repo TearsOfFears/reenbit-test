@@ -5,3 +5,28 @@ body {
   margin: 0;
   font-family:'Roboto',sans-serif;
 }
+@mixin breakpoint($class) {
+  @if $class == xs {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  } @else if $class == sm {
+    @media screen and (min-width: 600px) and (max-width: 900px) {
+      @content;
+    }
+  } @else if $class == md {
+    @media screen and (min-width: 900px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $class == lg {
+    @media (min-width: 1200px) and (max-width: 1536px){
+      @content;
+    }
+  } @else if $class == xl {
+    @media (min-width: 1536px) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint mixin supports: xs, sm, md, lg xl";
+  }
+}

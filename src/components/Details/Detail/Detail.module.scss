@@ -1,0 +1,49 @@
+@import "./src/index.scss";
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  justify-content: center;
+  @include breakpoint(sm) {
+   width: 100%;
+  }
+  @include breakpoint(xs) {
+    width: 100%;
+  }
+  h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 10px;
+    @include breakpoint(xs) {
+      font-size: 35px;
+    }
+  }
+  h3{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    letter-spacing: 0.15px;
+    color: #8E8E93;
+  }
+  .wrapper__image{
+    width: 300px;
+    height: 300px;
+    border:5px solid #F2F2F7;
+    border-radius: 100%;
+    overflow: hidden;
+    @include breakpoint(xs) {
+      width: 150px;
+      height: 150px;
+    }
+     img{
+       width: inherit;
+       height: inherit;
+       object-fit: cover;
+     }
+  }
+}

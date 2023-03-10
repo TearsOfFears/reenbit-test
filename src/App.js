@@ -1,20 +1,28 @@
-import {
-	createBrowserRouter,
-	RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Details from "./pages/Details";
-
+import Login from "./pages/Login";
+import AuthWrapper from "./Layouts/AuthWrapper/AuthWrapper";
 function App() {
 	const router = createBrowserRouter([
 		{
 			path: "/",
-			element: <Home />
+			element:
+				(<AuthWrapper>
+					<Home />
+				</AuthWrapper>)
 		},
 		{
 			path: "details/:characterId",
-			element: <Details />,
+			element: (
+				<AuthWrapper>
+					<Details />
+				</AuthWrapper>)
 		},
+		{
+			path: "/login",
+			element:  <Login />
+		}
 	]);
 	return (
 		<div className="App">

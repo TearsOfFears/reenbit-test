@@ -5,15 +5,14 @@ import MainLayout from "../Layouts/MainLayout/MainLayout";
 import Input from "../ui/Input/Input";
 import Logo from "../assets/logo.png";
 import { useSearchParams } from "react-router-dom";
+import GoogleLogin from "../components/Login/GoogleLogin/GoogleLogin";
 function Home() {
-	const [searchParams] = useSearchParams();
-	const [value, setValue] = useState(searchParams.get("name"));
-	const {data, isLoading, error } = useCharacters(value);
+	// const [searchParams] = useSearchParams();
+	// const [value, setValue] = useState(searchParams.get("name"));
+	// const {data, isLoading, error } = useCharacters(value);
 	return (
 		<MainLayout>
-			<img src={Logo} />
-			<Input setValue={setValue} value={value} isLoading={isLoading} />
-			<List data={data} isLoading={isLoading} error={error} />
+			<GoogleLogin/>
 		</MainLayout>
 	);
 }
