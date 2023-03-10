@@ -17,6 +17,7 @@
     font-weight: 400;
     font-size: 48px;
     margin-top: 10px;
+    text-align: center;
     @include breakpoint(xs) {
       font-size: 35px;
     }
@@ -29,6 +30,7 @@
     display: flex;
     letter-spacing: 0.15px;
     color: #8e8e93;
+
   }
   .wrapper__image {
     width: 300px;

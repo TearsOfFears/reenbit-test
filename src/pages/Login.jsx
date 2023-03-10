@@ -6,10 +6,7 @@ import Input from '../ui/Input/Input';
 import Logo from '../assets/logo.png';
 import { useSearchParams } from 'react-router-dom';
 import GoogleLogin from '../components/Login/GoogleLogin/GoogleLogin';
-function Home() {
-  // const [searchParams] = useSearchParams();
-  // const [value, setValue] = useState(searchParams.get("name"));
-  // const {data, isLoading, error } = useCharacters(value);
+function Login() {
   return (
     <MainLayout>
       <GoogleLogin />
@@ -17,4 +14,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Login;

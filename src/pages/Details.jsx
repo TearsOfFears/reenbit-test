@@ -10,7 +10,11 @@ function Details() {
   const navigate = useNavigate();
   const location = useLocation();
   const handleClick = () => {
-    navigate(`/${location.state.from.search}`);
+    if (location.state?.from) {
+      navigate(`/${location.state.from.search}`);
+    } else {
+      navigate(`/`);
+    }
   };
   return (
     <>
