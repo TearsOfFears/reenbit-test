@@ -1,21 +1,21 @@
-.wrapper__text{
+.wrapper__text {
   margin-left: 20px;
   width: 100%;
-  .title{
+  .title {
     margin: 15px 0 0 0;
     padding: 0;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-  text-align: left;
+    text-align: left;
     letter-spacing: 0.15px;
     color: rgba(0, 0, 0, 0.87);
   }
-  .subTitle{
+  .subTitle {
     margin-top: 5px;
     padding: 0;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.25px;
@@ -23,15 +23,15 @@
     text-align: left;
   }
 }
-.wrapper__withBorder{
+.wrapper__withBorder {
   @extend .wrapper__text;
-  border-bottom: 1px solid #EEEEEE;
+  border-bottom: 1px solid #eeeeee;
   width: 100%;
 
-  .title{
-    color: #081F32;
+  .title {
+    color: #081f32;
   }
-  .subTitle{
-    color: #6E798C;
+  .subTitle {
+    color: #6e798c;
   }
 }

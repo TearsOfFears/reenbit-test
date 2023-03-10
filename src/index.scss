@@ -1,9 +1,9 @@
-*{
+* {
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family:'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 @mixin breakpoint($class) {
   @if $class == xs {
@@ -19,7 +19,7 @@ body {
       @content;
     }
   } @else if $class == lg {
-    @media (min-width: 1200px) and (max-width: 1536px){
+    @media (min-width: 1200px) and (max-width: 1536px) {
       @content;
     }
   } @else if $class == xl {

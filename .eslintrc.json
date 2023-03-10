@@ -5,13 +5,9 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "prettier"
     ],
-    "settings": {
-        "react": {
-            "version": "detect"
-        }
-    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -25,22 +21,6 @@
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off",
-        "no-unused-vars": "off",
-        "indent": [
-            "error",
-            "tab"
-        ],
-        "linebreak-style": [
-            "error",
-            "windows"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ]
+        "no-unused-vars": "off"
     }
 }

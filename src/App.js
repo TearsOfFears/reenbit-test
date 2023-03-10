@@ -1,38 +1,40 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home";
-import Details from "./pages/Details";
-import Login from "./pages/Login";
-import AuthWrapper from "./Layouts/AuthWrapper/AuthWrapper";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './pages/Home';
+import Details from './pages/Details';
+import Login from './pages/Login';
+import AuthWrapper from './Layouts/AuthWrapper/AuthWrapper';
 function App() {
-	const router = createBrowserRouter([
-		{
-			path: "/",
-			element:
-				(<AuthWrapper>
-					<Home />
-				</AuthWrapper>)
-		},
-		{
-			path: "details/:characterId",
-			element: (
-				<AuthWrapper>
-					<Details />
-				</AuthWrapper>)
-		},
-		{
-			path: "/login",
-			element:  <Login />
-		},
-		{
-			path: "*",
-			element:  <h1>Not found</h1>
-		}
-	]);
-	return (
-		<div className="App">
-			<RouterProvider router={router} />
-		</div>
-	);
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: (
+        <AuthWrapper>
+          <Home />
+        </AuthWrapper>
+      ),
+    },
+    {
+      path: 'details/:characterId',
+      element: (
+        <AuthWrapper>
+          <Details />
+        </AuthWrapper>
+      ),
+    },
+    {
+      path: '/login',
+      element: <Login />,
+    },
+    {
+      path: '*',
+      element: <h1>Not found</h1>,
+    },
+  ]);
+  return (
+    <div className='App'>
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

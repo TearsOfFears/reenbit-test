@@ -1,6 +1,6 @@
-.input{
+.input {
   background: url(../../assets/find.png) no-repeat 15px;
-  background-position-y:center;
+  background-position-y: center;
   width: 100%;
   padding: 16px 0px 16px 45px;
   display: flex;
@@ -17,10 +17,10 @@
   line-height: 150%;
   color: rgba(0, 0, 0, 0.5);
 
-  &:active{
+  &:active {
     border: 1px solid rgba(0, 0, 0, 0.5);
   }
-  &:focus-visible{
+  &:focus-visible {
     border: 1px solid rgba(0, 0, 0, 0.5);
   }
 }
