@@ -14,8 +14,8 @@ function GoogleLogin() {
     gapi.load('client:auth2', start);
   }, []);
   const responseGoogle = (response) => {
-    if (response.accessToken) {
-      localStorage.setItem('token', response.accessToken);
+    if (response.tokenId) {
+      localStorage.setItem('token', response.tokenId);
       return navigate('/');
     }
   };
