@@ -14,7 +14,7 @@ export default function useCharacters(name) {
     axios
       .get(`character/?name=${name}`)
       .then(({ data }) => {
-        const sortedData = data.results.sort((a, b) => a.name.localeCompare(b.name)).slice(0, 8);
+        const sortedData = data.results.sort((a, b) => a.name.localeCompare(b.name));
         setCharacters({ data: sortedData, isLoading: false });
       })
       .catch((e) => setCharacters({ data: [], isLoading: false, error: e.response.data.error }));

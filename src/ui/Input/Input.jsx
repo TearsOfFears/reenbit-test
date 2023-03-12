@@ -1,14 +1,12 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import styles from './Input.module.scss';
 
 function Input(props) {
   const { value, setValue, isLoading } = props;
-  const handleInput = useCallback(
-    (e) => {
-      setValue(e.target.value);
-    },
-    [value],
-  );
+  const handleInput = (e) => {
+    setValue(e.target.value);
+  };
+
   return (
     <input
       className={styles.input}
