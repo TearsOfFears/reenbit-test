@@ -1,0 +1,53 @@
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  div{
+    width: 200px;
+    height: 100px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color:white;
+    font-size: 50px;
+    position: relative;
+    textarea{
+      background: none;
+      color:white;
+      text-align: center;
+      width: 100%;
+      font-size: 20px;
+      outline: 0;
+      padding: 0;
+      border: none;
+      margin: 0;
+      resize: none
+    }
+    button{
+      position: absolute;
+      right:-20px;
+      height: 100%;
+      width: 20px;
+      background: none;
+      outline: none;
+      border: none;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    .delete{
+      position: absolute;
+      top:-15px;
+      left:-15px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: white;
+      border: 2px solid #edebb9;
+      font-size: 20px;
+    }
+  }
+}

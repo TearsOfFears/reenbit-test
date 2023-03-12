@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Details from './pages/Details';
 import Login from './pages/Login';
 import AuthWrapper from './Layouts/AuthWrapper/AuthWrapper';
+import Notations from './pages/Notations';
 function App() {
   const router = createBrowserRouter([
     {
@@ -24,6 +25,10 @@ function App() {
     {
       path: '/login',
       element: <Login />,
+    },
+    {
+      path: '/notations',
+      element: <Notations />,
     },
     {
       path: '*',
