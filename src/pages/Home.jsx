@@ -7,7 +7,7 @@ import Logo from '../assets/logo.png';
 import { useSearchParams } from 'react-router-dom';
 function Home() {
   const [searchParams] = useSearchParams();
-  const [value, setValue] = useState(searchParams.get('name'));
+  const [value, setValue] = useState(searchParams.get('name') || '');
   const { data, isLoading, error } = useCharacters(value);
   return (
     <MainLayout>
